@@ -1,0 +1,10 @@
+%Probamos si ignora los comentarios en varias partes del fichero
+%Esto es un comment 
+ALFABETO { a , b }	%Comentario a final de linea	
+ESTADOS { 4 }
+%Soy relleno
+%Dos comentarios seguidos en medio de la notacion 
+TRANSICIONES { (0 , a ; 3), (0 , b ; 1), (1 , a ; 2), (1 , b ; 1), (2 , a ; 3), (2, b ; 1), (3 , a ; 3), (3, b ; 3) }
+%comentario a inicio de linea INICIAL { 0 }
+FINAL { 0, 1 }
+%Que pasara %que misterio habra

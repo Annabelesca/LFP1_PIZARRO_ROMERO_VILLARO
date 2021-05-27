@@ -1,0 +1,6 @@
+%Probamos que pasa si le ponemos un valor de estados con un numero negativo
+ALFABETO { a , b }
+ESTADOS { -3 }
+TRANSICIONES { (0 , a ; 3), (0 , b ; 1), (1 , a ; 2), (1 , b ; 1), (2 , a ; 3), (2, b ; 1), (3 , a ; 3), (3, b ; 3) }
+INICIAL { 0 }
+FINAL { 0, 1 }
