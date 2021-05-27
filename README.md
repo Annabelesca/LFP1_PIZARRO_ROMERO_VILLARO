@@ -1,4 +1,4 @@
-<h1><p align="center"># Analizador léxico en FLEX</p></h1>
+<h1><p align="center">Analizador léxico en FLEX</p></h1>
 <h2><p align="center">Pràctica 1. Llenguatges formals</p></h1>
 
 ## 1. Enunciado
@@ -36,13 +36,13 @@ Definimos una constante num para identificar los enteros sin signo.
 Definimos una expresión regular que se corresponda con { para “ABRIR” y otra que se corresponda con } para cerrar.
 
 ### 2.4 Identificación de símbolos alfabéticos y numéricos: 
-Definimos una expresión regular que se corresponda con { para “ABRIR” y otra que se corresponda con } para cerrar.
+Para identificar símbolos alfanuméricos definimos un alfabeto que incluya números arábigos y las letras tanto en mayúscula como en minúscula.
 
 ### 2.5 Identificación de transiciones:
-Definimos una expresión regular que se corresponda con { para “ABRIR” y otra que se corresponda con } para cerrar.
+Se define una expresión regular que detecta el patrón “num.simbol.num” y ésta se correponde a la palabra TRANSICIÓN.
 
 ### 2.6 Identificación de espacios en blanco y tabuladores: 
-Definimos una expresión regular que se corresponda con { para “ABRIR” y otra que se corresponda con } para cerrar.
+Se define una expresión regular que agrupa aquellos caracteres de espacios (‘ ‘ o \t) y los convierte en un solo espacio en blanco, de manera que si nuestro analizador léxico analiza un texto similar a ‘A B’, lo traduce a ‘A B’ ya que agrupa todos los espacios en blanco como uno sólo.
 
 ### 2.7 Identificación de comentarios 
 Definimos una expresión regular para detectar las líneas que empiezan por resultado (en cuyo caso, el analizador léxico las ignora) y otra para detectar el comentario al final de línea (en cuyo caso se hace un salto de línea)
@@ -53,7 +53,7 @@ Para hacer este juego de pruebas nos hemos basado en AF del ejercicio 38e del PD
 L  = {w pertenece a Z*: totes les as en w es troben entre dues bs}. 
 
 <p align="center">
-  <img alt="Figura 1.Esquema automata juego de pruebas" src="">
+  <img alt="Figura 1.Esquema automata juego de pruebas" src="https://github.com/Annabelesca/LFP1_PIZARRO_ROMERO_VILLARO/blob/master/Figuras/Figura1.png">
 </p>
 
 Utilizaremos la siguiente notación para representar este AF con el que haremos las pruebas pertinentes para comprobar el correcto funcionamiento de nuestro analizador léxico:
@@ -70,4 +70,6 @@ FINALES { 0, 1 }
 
 Para las pruebas, haremos pequeñas modificaciones en estas notaciones:
 
-INSERTAR JUEGO DE PRUEBAS
+<p align="center">
+  <img alt="Figura 2.Juego de pruebas" src="https://github.com/Annabelesca/LFP1_PIZARRO_ROMERO_VILLARO/blob/master/Figuras/Figura2.png">
+</p>
